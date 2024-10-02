@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <style>
+        .parent{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-columns: 15% 70% 15%;
+            margin: 0px;
+            padding: 0px;
+            gap: 5px;
+        }
+        .header{
+            background-color: lightcoral;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+            
+
+
+        }
+        .leftmenu{
+            background-color: green;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        .main{
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        .rightmenu{
+            background-color: lightblue;
+            grid-column:3/4 ;
+            grid-row: 2/3;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        .footer{
+            background-color: lightgreen;
+            grid-column:1/4 ;
+            grid-row:3/3 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">KLU</div>
+        <div class="leftmenu">Menu</div>
+        <div class="main">Main</div>
+        <div class="rightmenu">Rightmenu</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
